@@ -1,0 +1,61 @@
+/* ADD ANY LINES OF CODE YOU DEEM NECESSARY FOR QUESTION 1*/
+/* @keyframes button-hover {
+    0% {
+        transform: none;
+        opacity: 0.7;
+        border-radius: 0;
+    }
+    25% {
+        transform: rotate(45deg);
+        opacity: 0.78;
+        border-radius: 25%;
+    }
+    50% {
+        transform: rotate(90deg);
+        opacity: 0.85;
+        border-radius: 50%;
+    }
+    25% {
+        transform: rotate(135deg);
+        opacity: 0.92;
+        border-radius: 50%;
+    }
+    100% {
+        transform: rotate(180deg);
+        opacity: 1;
+        border-radius: 50%;
+    }
+} */
+
+.button:hover {
+    transform: rotate(180deg);
+    opacity: 1;
+    border-radius: 50%;
+  }
+
+.button {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: black;
+    margin: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out, border-radius 0.45s ease-in-out;
+}
+
+#row {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body, html {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background: #f7f5f2;
+    position: relative;
+}
