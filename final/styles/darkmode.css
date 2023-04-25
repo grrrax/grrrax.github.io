@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.background {
+    background-color: #9C90BD;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    height: 85vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.nav {
+    height: 15vh;
+    width: 100vw;
+    background-color: #000000;
+    margin: 0;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+#nav-container {
+    height: 15vh;
+    width: 85vw;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    padding-right: 0px;
+}
+
+#logo {
+    height: 90%;
+    width: auto;
+    margin-bottom: -8px;
+}
+
+#nav-button {
+    color: rgb(255, 255, 255);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    font-weight: normal;
+}
+
+#nav-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#cloud1 {
+    position: absolute;
+    height: 35vh;
+    width: 100vw;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 950;
+    transition: transform 1s ease;
+}
+
+#cloud1:hover {
+    transform: scale(1.1)
+}
+
+#cloud2 {
+    position: absolute;
+    height: 45vh;
+    width: 55vw;
+    max-width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 970;
+    transition: transform 1s ease;
+}
+
+#cloud2:hover {
+    transform: scale(1.1)
+}
+
+#cloud3 {
+    position: absolute;
+    height: 63vh;
+    width: 70vw;
+    max-width: 100%;
+    bottom: 0%;
+    left: 0%;
+    z-index: 980;
+    transition: transform 1s ease;
+}
+
+#cloud3:hover {
+    transform: scale(1.05)
+}
+
+#cloud4 {
+    position: absolute;
+    height: 50vh;
+    width: 100vw;
+    min-width: 100%;
+    bottom: 0%;
+    right: 0%;
+    z-index: 1100;
+    transition: transform 1s ease;
+}
+
+#cloud4:hover {
+    transform: scale(1.07)
+}
+
+.portrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#pic {
+    height: 52vh;
+    width: auto;
+    z-index: 997;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rings {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 997;
+    height: 573px;
+    width: 573px;
+    position: relative;
+    margin: 0 auto;
+    bottom: 10%;
+    animation: rotate 40s linear infinite;
+}
+
+.ring1, .ring2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vh;
+    margin: auto;
+}
+
+.ring1 {
+    height: 80vh;
+    width: auto;
+    z-index: 998;
+    margin: auto;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.ring2 {
+    height: 65vh;
+    width: auto;
+    z-index: 999;
+    margin: auto;
+}
+
+.socialcontainer {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    width: 100vw;
+    height: 15vh;
+    align-items: flex-end;
+    justify-content: center;
+    bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socials {
+    height: 50px;
+    width: auto;
+    z-index: 1200;
+    padding-left: 22px;
+    padding-right: 22px;
+    transition: transform 0.3s ease;
+}
+
+.socials:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#icons {
+    height: 50px;
+    width: auto;
+}
+
+
+#button {
+    height: 45px;
+    width: auto;
+    right: 0px;
+    position: absolute;
+    top: 5vh;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 90px;
+    z-index: 999;
+}
